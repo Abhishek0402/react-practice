@@ -1,8 +1,9 @@
-export function HeaderComponent(){
+/* eslint-disable react/prop-types */
+export function HeaderComponent(props){
     return (
     <>
-        <h1>
-            {import.meta.env.DEV ? 'Local server' : 'Prod server'}
-        </h1>
+      <h1>
+       {props.title} this is {import.meta.env.DEV ? 'local' : 'prod'} server
+      </h1>
     </>)
-}
+}   
