@@ -6,8 +6,10 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+const [test,setTest] = useState(true)
 
   function handleClick(){
+    setTest(!test);
     console.log('test event triggered');
   }
 
@@ -29,6 +31,7 @@ function App() {
           count is {count}
         </button>
         <button onClick={handleClick}>Test event</button>
+        {test ? <p>I am true</p> : <p>I am false</p>}
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
