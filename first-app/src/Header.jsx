@@ -3,7 +3,7 @@ export function HeaderComponent(props){
     return (
     <>
       <h1>
-       {props.title} this is {import.meta.env.DEV ? 'local' : 'prod'} server
+       {props.title} this is {props.children} server
       </h1>
     </>)
 }   

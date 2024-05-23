@@ -17,7 +17,9 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <HeaderComponent title="Hi"></HeaderComponent>
+      <HeaderComponent title="Hi">
+        {import.meta.env.DEV ? 'local' : 'prod'}
+      </HeaderComponent>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
