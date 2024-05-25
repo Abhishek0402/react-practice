@@ -33,9 +33,6 @@ const [test,setTest] = useState(true)
         <button onClick={handleClick}>Test event</button>
         {test ? <p>I am true</p> : <p>I am false</p>}
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
