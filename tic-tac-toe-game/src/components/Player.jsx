@@ -12,6 +12,7 @@ const [playerName,setName] = useState(name);
     function updateName(event){
         setName(event.target.value);
     }
+    
     return (
     <li>
         <span className="player">
